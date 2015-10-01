@@ -1,0 +1,117 @@
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  }
+
+nav {
+  list-style: none;
+  margin-left: 15px;
+  padding: 0;
+  background: white;
+  font-size: 14pt;
+}
+
+.banner {
+  background-color: pink;
+  margin: 0;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  padding: 0px;
+  height: 75px;
+  }
+
+.main {
+  background-color: lightgrey;
+  height: 1000px;
+}
+
+.choose-account {
+  padding: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.account-type {
+  display: inline-block;
+  margin: 5pt;
+  border: 1px solid #ccc;
+}
+
+.price {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.personal .price {
+  background-color: green;
+}
+
+.smallbusiness .price {
+  background-color: navy;
+}
+
+.enterprise .price {
+  background-color: black;
+}
+.title {
+  color: #eee;
+}
+
+.amount {
+  color: #eee;
+  font-size: 36px;
+}
+
+.duration {
+  color: #ccc;
+}
+
+.attributes {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  width: 250px;
+  margin-top: 0px;
+  margin-left: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.attributes li {
+  list-style: none;
+  padding: 7px;
+  text-align: center;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}
+.choose {
+  color: black;
+  border-radius: 15pt;
+  background-color: white;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.left {
+  -webkit-columns: 2 150px;
+  -moz-columns: 2 150px;
+  columns: 2 150px;
+  font-family: 'Indie Flower', cursive;
+  margin-left:153px;
+  margin-right: 170px;
+}
+.head {
+  position: relative;
+  font-size: 14pt;
+  letter-spacing: 2pt;
+}
+
+.footer {
+  background-color: #3D3D3D;
+  color: lightgrey;
+  text-align: center;
+  height: 75px;
+  vertical-align: bottom;
+}
+
