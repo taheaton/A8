@@ -17,11 +17,12 @@ console.log(avg);
 
 //convert it to 2 decimal
 var converted = avg.toFixed(2);
-console.log(converted):
+console.log(converted);
 
 
 //make it a string
-var str = "The average price is "
+var str = "The average price is $" + converted;
+console.log(str);
 
 //make it show up on the page
 
