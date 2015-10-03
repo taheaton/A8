@@ -1,3 +1,4 @@
+  //Answer 1
   (function () {
 
   // Create an array of just the prices
@@ -99,17 +100,16 @@ var ccprice = cc.map( function (item) {
   });
   console.log(ccprice);
 
+  var ccstr = cctitle + " costs £" + ccprice
+  console.log(ccstr);
+
    // Find our answer element
    // Create a node from our above answer ready for the DOM
    // Append newly created node to our answer element
 
-  var answer3a = document.querySelector('#answer3a');
-  var textNode = document.createTextNode(cctitle);
-  answer3a.appendChild(textNode);
-  
-  var answer3b = document.querySelector('#answer3b');  
-  var textNode = document.createTextNode(ccprice);
-  answer3b.appendChild(textNode);
+  var answer3 = document.querySelector('#answer3');
+  var textNode = document.createTextNode(ccstr);
+  answer3.appendChild(textNode);
 }());
 
 
@@ -123,7 +123,7 @@ var wood = items.filter(function (item) {
     if (item.materials.indexOf('wood') !== -1 )
       return true;
   });
-console.log(wood)
+console.log(wood);
 // 
 var woodTitle = wood.map( function (item) {
     return item.title;
@@ -145,9 +145,6 @@ var woodTitle = wood.map( function (item) {
 
 //5  Display the name, number of items and the items it is made of.
 (function(){
-var wood = items.filter(function (item) {
-    if (item.materials.indexOf('wood') !== -1 )
-      return true;
 
 //get number of materials
 
@@ -155,86 +152,99 @@ var mat = items.map( function (item) {
     return item.materials.length;
   });
 console.log(mat);
+
 //filter the ones with mats >=8
 var filterMat = items.filter(function (item) {
     if (item.materials.length >= 8)
       return true;
   });
+console.log(filterMat);
 
 //names!!!
-var titleMat = filterMat.map( function (item) {
+var titles = filterMat.map( function (item) {
     return item.title;
   });
-  console.log(titleMat);
+  console.log(titles);
 
-//number!!!
-var numberMat = filterMat.map( function (item) {
-    return item.materials.length;
+//Materials
+var materials = filterMat.map( function (item) {
+    return item.materials;
   });
-  console.log(numberMat);
+  console.log(materials);
 
-//all the materials!!!
-var allMat = filterMat.map( function (item) {
-    return item.materials.shift;
-  });
-  console.log(allMat);
+// Title of item 1
+var titleOne = titles.shift( function (item) {
+  return item.title;
+});
+console.log(titleOne);
 
+//Materials of 1
+var materialsOne = materials.shift( function (item) {
+  return item.materials;
+});
+console.log(materialsOne);
 
-items.filter(function(count){
-  if (count.materials.length >= 8) {
-     array.push(count.title);
-     array.push(count.materials.length);
-     array2.push(count.materials);
+//Title of item 2
+var titleTwo = titles.shift( function (item) {
+  return item.title;
+});
+console.log(titleTwo);
 
-    } //end of if
-}); //end of for filter
-var item1 = array.shift();
-var item2 = array.shift();
-var itemA = item1+" "+item2;
+//Materials of 2
+var materialsTwo = materials.shift( function (item) {
+  return item.materials;
+});
+console.log(materialsTwo);
 
-var item3 = array.shift();
-var item4 = array.shift();
-var itemB = item3+" "+item4;
+// Make it show up on the page
 
-var itemC = array2.shift();
-var itemD = array2.shift();
+    // Find our answer element
+  var answer5a = document.querySelector('#answer5a');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(titleOne);
+    // Append newly created node to our answer element
+  answer5a.appendChild(textNode);
 
-//ITEM1
-var answer5A = document.querySelector('#answer5A');
-var textNode = document.createTextNode(itemA);
-answer5A.appendChild(textNode);
-//ITEM2
-var answer5B = document.querySelector('#answer5B');
-var textNode = document.createTextNode(itemC);
-answer5B.appendChild(textNode);
-//ITEM3
-var answer5C = document.querySelector('#answer5C');
-var textNode = document.createTextNode(itemB);
-answer5C.appendChild(textNode);
-//ITEM3
-var answer5D = document.querySelector('#answer5D');
-var textNode = document.createTextNode(itemD);
-answer5D.appendChild(textNode);
-})(); 
-// end of self executing function
+  var answer5b = document.querySelector('#answer5b');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(materialsOne);
+    // Append newly created node to our answer element
+  answer5b.appendChild(textNode);
+
+  var answer5c = document.querySelector('#answer5c');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(titleTwo);
+    // Append newly created node to our answer element
+  answer5c.appendChild(textNode);
+
+  var answer5d = document.querySelector('#answer5d');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(materialsTwo);
+    // Append newly created node to our answer element
+  answer5d.appendChild(textNode);
+}());
+
 //6
 ( function(){
-  var array = [];
+  var who = items.filter(function (item) {
+    if (item.who_made === "i_did")
+      return true;
+  });
+console.log(who);
 
-  items.filter(function(made){
-      if(made.who_made === 'i_did'){
-          // console.log(made.who_made);
-          array.push(made.who_made);
-      }//end of if
+var selfmade = who.length;
 
-  })//end of filter
-var item1 = array.length;
+//Convert to text
+var selfstr = selfmade + " were made by their sellers";
+// Make it show up on the page
 
-var answer6A = document.querySelector('#answer6A');
-var textNode = document.createTextNode(item1);
-answer6A.appendChild(textNode);
-
-})(); // end of self executing function
+    // Find our answer element
+  var answer6 = document.querySelector('#answer6');
+    // Create a node from our above answer ready for the DOM
+  var textNode = document.createTextNode(selfstr);
+    // Append newly created node to our answer element
+  answer6.appendChild(textNode);
+}());
 
 // we can use these 
 // array.map()

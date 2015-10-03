@@ -26,8 +26,15 @@ nav {
 }
 
 .Answer {
-  font-size: 16pt;
-  padding: 50pt;
+  font-size: 12pt;
+  padding: 0pt;
+  text-align: left;
+  margin-right: 125pt;
+  margin-left: 50pt;
+}
+.header {
+  font-size: 18pt;
+  padding: 25pt;
 }
 
 .footer {
