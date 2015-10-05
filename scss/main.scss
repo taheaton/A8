@@ -12,99 +12,30 @@ nav {
 }
 
 .banner {
-  background-color: pink;
-  margin: 0;
-  color: white;
-  font-size: 36px;
-  text-align: center;
-  padding: 0px;
-  height: 75px;
+  background-image: url(banner.jpg);
+  width: 2042px;
+  height: 240px;
+  position: relative;
+  left: -385px;
+
   }
 
 .main {
-  background-color: lightgrey;
-  height: 1000px;
-}
-
-.choose-account {
-  padding: 0px;
+  background-color: #EDEDED;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-.account-type {
-  display: inline-block;
-  margin: 5pt;
-  border: 1px solid #ccc;
 }
 
-.price {
-  border: 1px solid #ccc;
-  padding: 15px;
+.Answer {
+  font-size: 12pt;
+  padding: 0pt;
+  text-align: left;
+  margin-right: 125pt;
+  margin-left: 50pt;
 }
-
-.personal .price {
-  background-color: green;
-}
-
-.smallbusiness .price {
-  background-color: navy;
-}
-
-.enterprise .price {
-  background-color: black;
-}
-.title {
-  color: #eee;
-}
-
-.amount {
-  color: #eee;
-  font-size: 36px;
-}
-
-.duration {
-  color: #ccc;
-}
-
-.attributes {
-  list-style: none;
-  padding: 0px;
-  text-align: center;
-  color: black;
-  text-transform: capitalize;
-  width: 250px;
-  margin-top: 0px;
-  margin-left: 0px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-.attributes li {
-  list-style: none;
-  padding: 7px;
-  text-align: center;
-  background: #eee;
-  border-bottom: 1px solid #ccc;
-}
-.choose {
-  color: black;
-  border-radius: 15pt;
-  background-color: white;
-  margin-top: 8px;
-  margin-bottom: 20px;
-}
-.left {
-  -webkit-columns: 2 150px;
-  -moz-columns: 2 150px;
-  columns: 2 150px;
-  font-family: 'Indie Flower', cursive;
-  margin-left:153px;
-  margin-right: 170px;
-}
-.head {
-  position: relative;
-  font-size: 14pt;
-  letter-spacing: 2pt;
+.header {
+  font-size: 18pt;
+  padding: 25pt;
+  font-family: roboto slab
 }
 
 .footer {
@@ -114,4 +45,3 @@ nav {
   height: 75px;
   vertical-align: bottom;
 }
-
